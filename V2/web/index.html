@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário de solicitações</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-6">
+
+                    <!-- Início do formulário -->
+                    <form class="text-center border border-light p-5" action="http://localhost/api" method="POST">
+
+                        <p class="h4 mb-4">Formulário de solicitações</p>
+
+                        <div class="form-row mb-4">
+                            <div class="col">
+                                <!-- Campo nome -->
+                                <input type="text" id="nomecompleto" name="nome" class="form-control" placeholder="Nome completo">
+                            </div>
+                        </div>
+
+                        <!-- Campo email -->
+                        <input type="text" id="assunto" name="assunto" class="form-control mb-4" placeholder="Assunto">
+
+                        <!-- Campo mensagem-->
+                        <textarea  id="mensagem" name="mensagem" class="form-control" placeholder="Informe aqui a sua solicitação"></textarea>
+
+
+                        <!-- Botão de enviar -->
+                        <button class="btn btn-info my-4 btn-block" type="submit">Enviar</button>
+
+                    </form>
+                    <!-- fim do formulário -->
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
